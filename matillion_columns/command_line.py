@@ -8,10 +8,10 @@ import boto3
 
 parser = argparse.ArgumentParser(epilog='''\
 To save to a file:
-    ./command_line.py [OPTIONS] csv_file.csv > outfile.txt
+    matillion-columns [OPTIONS] csv_file.csv > outfile.txt
 
 To copy to clipboard (Mac):
-    ./command_line.py csv_file.csv | pbcopy
+    matillion-columns csv_file.csv | pbcopy
 ''', formatter_class=argparse.RawDescriptionHelpFormatter)
 
 parser.add_argument('csv_file', help='Path to CSV file in S3 to extract headers from (excluding bucket name).')
