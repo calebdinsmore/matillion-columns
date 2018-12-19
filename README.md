@@ -4,8 +4,10 @@
 
 ### Installation
 
-`brew install python2`
-`pip install --user matillion-columns`
+```bash
+brew install python2
+pip install --user matillion-columns
+```
 
 ### Run
 
