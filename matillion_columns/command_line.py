@@ -20,7 +20,7 @@ args = parser.parse_args()
 
 
 def generate_line(csv_header):
-    line = [csv_header, 'VARCHAR', '', '', '', 'No', 'No', '', '', 'VARCHAR']
+    line = [csv_header, 'VARCHAR', '', '', '', 'No', 'No', 'VARCHAR', '', '']
     return '\t'.join(line)
 
 
