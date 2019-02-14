@@ -27,7 +27,7 @@ def generate_line(csv_header):
 def main():
     client = boto3.client('s3')
     csv_obj = client.get_object(Bucket=args.bucket, Key=args.csv_file)
-    body = csv_obj['Body'].read().decode('utf-8')
+    body = csv_obj['Body'].read().decode('utf-8-sig')
     reader = csv.reader(StringIO(body))
     headers = next(reader)
     columns = ''

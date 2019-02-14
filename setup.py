@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="matillion_columns",
-    version="0.0.3",
+    version="0.0.7",
     author="Caleb Dinsmore",
     author_email="caleb.dinsmore@edusource.us",
     description="A tool to generate columns in our Matillion grid variables using CSVs on S3",
@@ -18,7 +18,8 @@ setuptools.setup(
     },
     packages=setuptools.find_packages(),
     install_requires=[
-        'boto3'
+        'boto3',
+        'unicodecsv'
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
